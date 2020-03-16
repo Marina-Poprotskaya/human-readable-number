@@ -25,7 +25,7 @@ function getNumberHundred(number) {
     let result = '';
     let hundred = ' hundred'
     number = number.toString().split('');
-       if(number[1] == 0 && number[2] === 0) return arrNumSmall[number[0]] + hundred;
+       if(number[1] == 0 && number[2] == 0) return arrNumSmall[number[0]] + hundred;
        else { 
         result = arrNumSmall[number[0]];
         number = number.splice(1,2).join('');
